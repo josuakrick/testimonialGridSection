@@ -1,0 +1,64 @@
+.container {
+    width: 93%;
+    margin: 0 auto;
+    padding-bottom: 35px;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+    gap: 20px 20px;
+
+}
+
+
+.container__middle_daniel {
+    grid-area: daniel;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 20% top 10%;
+    background-color: var(--moderate-violet);
+    color: var(--light-gray);
+}
+
+
+.container__middle_jonathan {
+    grid-area: jonathan;
+    background-color: var(--very-dark-blue);
+    color: var(--light-gray);
+}
+
+.container__middle_jeanette {
+    grid-area: jeanette;
+    background-color: var(--white);
+}
+
+.container__middle_patrick {
+    grid-area: patrick;
+    background-color: var(--very-dark-blackish-blue);
+    color: var(--light-gray);
+}
+
+.container__right_kira {
+    grid-area: kira;
+    background-color: var(--white);
+}
+
+@media (max-width:1020px) {
+    .container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+@media (max-width:785px) { 
+    .container {
+        width: 100vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
